@@ -1,19 +1,22 @@
 import React from 'react'
+import Wishlist from '../common/Wishlist'
+import { AccountIcon } from '../common/AccountIcon'
+import { CartIcon } from '../common/CartIcon'
 
 const Navigation = () => {
   return (
-    <nav className='flex items-center py-6 px-16 justify-between gap-40  custom-nav'>
-        <div className='flex items-center gap-6'>
+    <nav className='flex items-center py-8 px-16 justify-between gap-20  custom-nav'>
+        <div className='flex items-center gap-8'>
             {/* Image */}
-            <a href='/' className='text-3xl font-bold text-black gap-8'>Shopease</a>
+            <a href='/' className='text-3xl font-bold text-black gap-8'>Exclusive</a>
         </div>
-        <div className='flex flex-wrap items-center gap-8 flex-1'>
+        <div className='flex flex-wrap items-center pl-20'>
             {/* Nav Items */}
             <ul className='flex gap-14 text-gray-600 hover:text-black'>
-                <li><a href="/">Shop</a></li>
-                <li><a href="/mens">Mens</a></li>
-                <li><a href="/womens">Womens</a></li>
-                <li><a href="/kids">Kids</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/mens">Contact</a></li>
+                <li><a href="/womens">About</a></li>
+                <li><a href="/kids">Sign Up</a></li>
             </ul>
         </div>
         
@@ -26,12 +29,13 @@ const Navigation = () => {
                 </div> 
             </div>
         </div>
-        <div className='flex flex-wrap items-center gap-10'>
+        <div className='flex flex-wrap items-center'>
             {/* Action Items */}
-            <ul className='flex gap-14 text-gray-600 hover:text-black'>
-                <li>Icon1</li>
-                <li>Icon2</li>
-                <li>Icon3</li>
+            <ul className='flex items-center gap-4 text-gray-600 hover:text-black'>
+                <li><button href="/"><Wishlist /></button></li>
+                <li><button href="/"><AccountIcon /></button></li>
+                <li><button href="/"><CartIcon /></button></li>
+                
             </ul>
         </div>
       
