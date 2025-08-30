@@ -5,14 +5,14 @@ import { CartIcon } from '../common/CartIcon'
 
 const Navigation = () => {
   return (
-    <nav className='flex items-center py-8 px-16 justify-between gap-20  custom-nav'>
-        <div className='flex items-center gap-8'>
+    <nav className='flex items-center py-8 px-16 justify-between gap-12  custom-nav'>
+        <div className='flex items-center pl-16 gap-8'>
             {/* Image */}
             <a href='/' className='text-3xl font-bold text-black gap-8'>Exclusive</a>
         </div>
-        <div className='flex flex-wrap items-center pl-20'>
+        <div className='flex flex-wrap items-center pl-16'>
             {/* Nav Items */}
-            <ul className='flex gap-14 text-gray-600 hover:text-black'>
+            <ul className='flex gap-11 text-gray-600 hover:text-black'>
                 <li><a href="/">Home</a></li>
                 <li><a href="/mens">Contact</a></li>
                 <li><a href="/womens">About</a></li>
